@@ -1,5 +1,6 @@
 package edu.pitt.cs;
 
+import org.mockito.Mock;
 import org.mockito.Mockito;
 
 public interface RentACat {
@@ -12,7 +13,6 @@ public interface RentACat {
 			case SOLUTION:
 				return new RentACatSolution();
 			case MOCK:
-				// TODO: Return a mock object that emulates the behavior of a real object.
 				return Mockito.mock(RentACat.class);
 			default:
 				assert (false);
